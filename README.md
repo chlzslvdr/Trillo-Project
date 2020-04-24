@@ -1,7 +1,8 @@
-[![Netlify Status](https://api.netlify.com/api/v1/badges/7bc9657e-155d-4717-84cc-cf7e5b386666/deploy-status)](https://app.netlify.com/sites/trillo-react-project/deploys)
-# Trillo-Project
+[![Netlify Status](https://api.netlify.com/api/v1/badges/7bc9657e-155d-4717-84cc-cf7e5b386666/deploy-status)](https://app.netlify.com/sites/trillo-react-app/deploys)
 
-This is a [Demo Project](https://trillo-react-project.netlify.app) made with [ Udemy Advance CSS and SCSS Course](https://github.com/jonasschmedtmann/advanced-css-course), converted to a React App.
+# Trillo-App
+
+This is a [Demo Project](https://trillo-react-app.netlify.app) made with [ Udemy Advance CSS and SCSS Course](https://github.com/jonasschmedtmann/advanced-css-course), converted to a React App.
 
 ## Installation
 
