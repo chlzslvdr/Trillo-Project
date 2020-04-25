@@ -10,6 +10,8 @@ import Map from '../../Icons/Map';
 import Star from '../../Icons/Star';
 import Location from '../../Icons/Location';
 import USER from '../../assets/img/user.png';
+import USER1 from '../../assets/img/user-1.png';
+import USER2 from '../../assets/img/user-2.png';
 import USER3 from '../../assets/img/user-3.png';
 import USER4 from '../../assets/img/user-4.png';
 import USER5 from '../../assets/img/user-5.png';
@@ -201,7 +203,43 @@ const Layout = () => {
               </div>
             </div>
 
-            <div className="user-reviews">user reviews </div>
+            <div className="user-reviews">
+              <figure className="review">
+                <blockquote className="review__text">
+                  Leo consequat faucibus volutpat purus ligula dictum blandit
+                  auctor felis primis parturient, vivamus pretium orci diam
+                  lacinia!!
+                </blockquote>
+                <figcaption className="review__user">
+                  <img src={USER1} alt="User 1" className="review__photo" />
+                  <div className="review__user-box">
+                    <p className="review__user-name">Lee Jong Suk</p>
+                    <p className="review__user-date">Aug 21st, 2019</p>
+                  </div>
+                  <div className="review__rating">8.5</div>
+                </figcaption>
+              </figure>
+
+              <figure className="review">
+                <blockquote className="review__text">
+                  Habitasse sollicitudin duis natoque malesuada tincidunt
+                  adipisicing congue fringilla, feugiat consequat.
+                </blockquote>
+                <figcaption className="review__user">
+                  <img src={USER2} alt="User 2" className="review__photo" />
+                  <div className="review__user-box">
+                    <p className="review__user-name">Nam Joo Hyuk</p>
+                    <p className="review__user-date">Feb 14th, 2020</p>
+                  </div>
+                  <div className="review__rating">6.7</div>
+                </figcaption>
+              </figure>
+
+              <button className="btn-inline">
+                Show all
+                <span>&rarr;</span>
+              </button>
+            </div>
           </div>
         </main>
       </div>
