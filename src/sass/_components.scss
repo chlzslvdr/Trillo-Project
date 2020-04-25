@@ -196,7 +196,7 @@
 .overview {
   display: flex;
   align-items: center;
-  border-bottom: 1px solid var(--color-grey-light-2);
+  border-bottom: var(--line);
 
   &__heading {
     font-size: 2.5rem;
@@ -288,5 +288,70 @@
   100% {
     transform: scale(1);
     box-shadow: none;
+  }
+}
+
+//////////////////////////////////////////////////
+// PARAGRAPH
+.paragraph:not(:last-of-type) {
+  margin-bottom: 2rem;
+}
+
+//////////////////////////////////////////////////
+// LIST
+.list {
+  display: flex;
+  list-style: none;
+  margin: 3rem 0;
+  padding: 3rem 0;
+  border-top: var(--line);
+  border-bottom: var(--line);
+  flex-wrap: wrap;
+
+  &__item {
+    flex: 0 0 50%;
+    margin-bottom: 0.7rem;
+  }
+
+  &__item::before {
+    display: inline-block;
+    content: ''; //required always on before pseudo
+    height: 1rem;
+    width: 1rem;
+    margin-right: 0.7rem;
+
+    //Older browsers
+    // background-image: url(../assets/img/chevron-thin-right.svg);
+    // background-size: cover;
+
+    //Newer browsers - masks
+    background-color: var(--color-primary);
+    mask-image: url(../assets/img/chevron-thin-right.svg);
+    mask-size: cover;
+  }
+}
+
+//////////////////////////////////////////////////
+// RECOMMEND
+.recommend {
+  display: flex;
+  font-size: 1.3rem;
+  color: var(--color-grey-dark-3);
+  align-items: center;
+
+  &__count {
+    margin-right: auto;
+  }
+
+  &__photo {
+    box-sizing: content-box;
+    width: 4.3rem;
+    height: 4.3rem;
+    border-radius: 50%;
+    border: 3px solid white;
+
+    &:not(:last-child) {
+      margin-right: -1.5rem;
+    }
   }
 }
