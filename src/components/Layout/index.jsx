@@ -7,7 +7,13 @@ import Home from '../../Icons/Home';
 import Airplane from '../../Icons/Airplane';
 import Key from '../../Icons/Key';
 import Map from '../../Icons/Map';
+import Star from '../../Icons/Star';
+import Location from '../../Icons/Location';
 import USER from '../../assets/img/user.png';
+
+import HOTEL1 from '../../assets/img/hotel-1.jpg';
+import HOTEL2 from '../../assets/img/hotel-2.jpg';
+import HOTEL3 from '../../assets/img/hotel-3.jpg';
 
 const Layout = () => {
   return (
@@ -45,7 +51,7 @@ const Layout = () => {
 
           <div className="user-nav__user">
             <img src={USER} alt="user" className="user-nav__user-photo" />
-            <span className="user-nav__user-name">Ji Hyo</span>
+            <span className="user-nav__user-name">Ji Eun</span>
           </div>
         </nav>
       </header>
@@ -92,7 +98,53 @@ const Layout = () => {
           </div>
         </nav>
 
-        <main className="hotel-view">HOTEL VIEW</main>
+        <main className="hotel-view">
+          <div className="gallery">
+            <figure className="gallery__item">
+              <img src={HOTEL1} alt="Hotel 1" className="gallery__photo" />
+            </figure>
+            <figure className="gallery__item">
+              <img src={HOTEL2} alt="Hotel 2" className="gallery__photo" />
+            </figure>
+            <figure className="gallery__item">
+              <img src={HOTEL3} alt="Hotel 3" className="gallery__photo" />
+            </figure>
+          </div>
+
+          <div className="overview">
+            <h1 className="overview__heading">Hotel Del Luna</h1>
+
+            <div className="overview__stars">
+              <span className="overview__icon-star">
+                <Star />
+              </span>
+              <span className="overview__icon-star">
+                <Star />
+              </span>
+              <span className="overview__icon-star">
+                <Star />
+              </span>
+              <span className="overview__icon-star">
+                <Star />
+              </span>
+              <span className="overview__icon-star">
+                <Star />
+              </span>
+            </div>
+
+            <div className="overview__location">
+              <span className="overview__icon-location">
+                <Location />
+              </span>
+              <button className="btn-inline">Seoul, South Korea</button>
+            </div>
+
+            <div className="overview__rating">
+              <div className="overview__rating-average">9.2</div>
+              <div className="overview__rating-count">720 votes</div>
+            </div>
+          </div>
+        </main>
       </div>
     </div>
   );
