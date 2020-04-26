@@ -1,14 +1,5 @@
 import React from 'react';
 import LOGO from '../../assets/img/logo.png';
-import MagnifyingGlass from '../../Icons/MagnifyingGlass';
-import Bookmark from '../../Icons/Bookmark';
-import Chat from '../../Icons/Chat';
-import Home from '../../Icons/Home';
-import Airplane from '../../Icons/Airplane';
-import Key from '../../Icons/Key';
-import Map from '../../Icons/Map';
-import Star from '../../Icons/Star';
-import Location from '../../Icons/Location';
 import USER from '../../assets/img/user.png';
 import USER1 from '../../assets/img/user-1.png';
 import USER2 from '../../assets/img/user-2.png';
@@ -16,7 +7,6 @@ import USER3 from '../../assets/img/user-3.png';
 import USER4 from '../../assets/img/user-4.png';
 import USER5 from '../../assets/img/user-5.png';
 import USER6 from '../../assets/img/user-6.png';
-
 import HOTEL1 from '../../assets/img/hotel-1.jpg';
 import HOTEL2 from '../../assets/img/hotel-2.jpg';
 import HOTEL3 from '../../assets/img/hotel-3.jpg';
@@ -34,24 +24,24 @@ const Layout = () => {
             placeholder="Seach hotels"
           />
           <button className="search__button">
-            <div className="search__icon">
-              <MagnifyingGlass />
-            </div>
+            <svg class="search__icon">
+              <use xlinkHref="/sprite.svg#icon-magnifying-glass"></use>
+            </svg>
           </button>
         </form>
 
         <nav className="user-nav">
           <div className="user-nav__icon-box">
-            <span className="user-nav__icon">
-              <Bookmark />
-            </span>
+            <svg class="user-nav__icon">
+              <use xlinkHref="/sprite.svg#icon-bookmark"></use>
+            </svg>
             <span className="user-nav__notification">7</span>
           </div>
 
           <div className="user-nav__icon-box">
-            <span className="user-nav__icon">
-              <Chat />
-            </span>
+            <svg class="user-nav__icon">
+              <use xlinkHref="/sprite.svg#icon-chat"></use>
+            </svg>
             <span className="user-nav__notification">12</span>
           </div>
 
@@ -67,33 +57,33 @@ const Layout = () => {
           <ul className="side-nav">
             <li className="side-nav__item side-nav__item--active">
               <a href="#" className="side-nav__link">
-                <span className="side-nav__icon">
-                  <Home />
-                </span>
+                <svg class="side-nav__icon">
+                  <use xlinkHref="/sprite.svg#icon-home"></use>
+                </svg>
                 <span>Hotel</span>
               </a>
             </li>
             <li className="side-nav__item">
               <a href="#" className="side-nav__link">
-                <span className="side-nav__icon">
-                  <Airplane />
-                </span>
+                <svg class="side-nav__icon">
+                  <use xlinkHref="/sprite.svg#icon-aircraft-take-off"></use>
+                </svg>
                 <span>Flight</span>
               </a>
             </li>
             <li className="side-nav__item">
               <a href="#" className="side-nav__link">
-                <span className="side-nav__icon">
-                  <Key />
-                </span>
+                <svg class="side-nav__icon">
+                  <use xlinkHref="/sprite.svg#icon-key"></use>
+                </svg>
                 <span>Car Rental</span>
               </a>
             </li>
             <li className="side-nav__item">
               <a href="#" className="side-nav__link">
-                <span className="side-nav__icon">
-                  <Map />
-                </span>
+                <svg class="side-nav__icon">
+                  <use xlinkHref="/sprite.svg#icon-map"></use>
+                </svg>
                 <span>Tours</span>
               </a>
             </li>
@@ -121,27 +111,27 @@ const Layout = () => {
             <h1 className="overview__heading">Hotel Del Luna</h1>
 
             <div className="overview__stars">
-              <span className="overview__icon-star">
-                <Star />
-              </span>
-              <span className="overview__icon-star">
-                <Star />
-              </span>
-              <span className="overview__icon-star">
-                <Star />
-              </span>
-              <span className="overview__icon-star">
-                <Star />
-              </span>
-              <span className="overview__icon-star">
-                <Star />
-              </span>
+              <svg class="overview__icon-star">
+                <use xlinkHref="/sprite.svg#icon-star"></use>
+              </svg>
+              <svg class="overview__icon-star">
+                <use xlinkHref="/sprite.svg#icon-star"></use>
+              </svg>
+              <svg class="overview__icon-star">
+                <use xlinkHref="/sprite.svg#icon-star"></use>
+              </svg>
+              <svg class="overview__icon-star">
+                <use xlinkHref="/sprite.svg#icon-star"></use>
+              </svg>
+              <svg class="overview__icon-star">
+                <use xlinkHref="/sprite.svg#icon-star"></use>
+              </svg>
             </div>
 
             <div className="overview__location">
-              <span className="overview__icon-location">
-                <Location />
-              </span>
+              <svg class="overview__icon-location">
+                <use xlinkHref="/sprite.svg#icon-location-pin"></use>
+              </svg>
               <button className="btn-inline">Seoul, South Korea</button>
             </div>
 
@@ -180,17 +170,17 @@ const Layout = () => {
                 </p>
                 <div className="recommend__friends">
                   <img
-                    src={USER6}
+                    src={USER4}
                     alt="Friend 1"
                     className="recommend__photo"
                   />
                   <img
-                    src={USER4}
+                    src={USER5}
                     alt="Friend 2"
                     className="recommend__photo"
                   />
                   <img
-                    src={USER5}
+                    src={USER6}
                     alt="Friend 3"
                     className="recommend__photo"
                   />
