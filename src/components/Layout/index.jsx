@@ -212,8 +212,8 @@ const Layout = () => {
 
               <figure className="review">
                 <blockquote className="review__text">
-                  Habitasse sollicitudin duis natoque malesuada tincidunt
-                  adipisicing congue fringilla, feugiat consequat.
+                  Senectus ullamcorper duis natoque velit malesuada tincidunt
+                  adipisicing congue fringilla, consequat.
                 </blockquote>
                 <figcaption className="review__user">
                   <img src={USER2} alt="User 2" className="review__photo" />
@@ -230,6 +230,16 @@ const Layout = () => {
                 <span>&rarr;</span>
               </button>
             </div>
+          </div>
+
+          <div className="cta">
+            <h2 className="cta__book-now">
+              Good news! We have 4 free rooms for your selected dates!
+            </h2>
+            <button className="btn">
+              <span className="btn__visible">Book now</span>
+              <span className="btn__invisible">Only 4 rooms left</span>
+            </button>
           </div>
         </main>
       </div>
