@@ -50,6 +50,10 @@ Make a compressed build version of your css
 npm run build:css
 ```
 
-### Resources
+## Resources
 
 http://codingheroes.io/resources
+
+## About
+
+All copyrights for this demo project belongs to [Jonas Schmedtmann](https://github.com/jonasschmedtmann).
