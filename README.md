@@ -1,4 +1,4 @@
-[![Netlify Status](https://api.netlify.com/api/v1/badges/7bc9657e-155d-4717-84cc-cf7e5b386666/deploy-status)](https://app.netlify.com/sites/trillo-react-app/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/7bc9657e-155d-4717-84cc-cf7e5b386666/deploy-status)](https://app.netlify.com/sites/trillo-react-project/deploys)
 
 # Trillo-Project
 

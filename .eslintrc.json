@@ -34,7 +34,7 @@
       "jsx-a11y/iframe-has-title": "warn",
       "jsx-a11y/label-has-for": "off",
       "comma-dangle":  ["off", "never"],
-      "jsx-a11y/anchor-is-valid": "warn",
+      "jsx-a11y/anchor-is-valid": "never",
       "react/no-unused-state": "warn",
       "react/default-props-match-prop-types": "warn",
       "react/require-default-props": "warn",
